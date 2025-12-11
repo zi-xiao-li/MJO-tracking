@@ -47,13 +47,14 @@ Place your raw file under:
 data/raw/
 
 
+
 ---
 
 ## Typical Workflow
 
-Below is a minimal example showing how to run the full pipeline.
+Below is a minimal example showing how to run the full pipeline:
 
-
+```matlab
 %% --------------------------------------------------------------
 % 1. Preprocess OLR (remove leap days, extract 1979–2013)
 %% --------------------------------------------------------------
@@ -102,12 +103,10 @@ window = 30;
 %% --------------------------------------------------------------
 % 8. Plot figures
 %% --------------------------------------------------------------
-plot_phase_speed_hist(data_all(:,4));  % histogram of speeds
+plot_phase_speed_hist(data_all(:,4));      % histogram of speeds
 plot_mjo_hovmoller(FastComp, SlowComp, t_fast, t_slow, lon);
 
----
-
-## Output
+Output
 
 The pipeline produces:
 
@@ -115,22 +114,25 @@ Estimated MJO propagation speeds (m/s)
 
 Classification of fast vs slow events
 
-Composite OLR fields (all/fast/slow)
+Composite OLR fields (all / fast / slow)
 
 Significance masks (t-test)
 
 Figures including:
 
-Phase speed histogram
+Phase-speed histogram
 
-WK99-style OLR variance composites
+WK99-style OLR composites
 
 Hovmöller diagrams
 
-Figures can be placed under:
+Figures can be stored under:
 
 figures/
 
-## License
+License
 
 MIT License.
+
+
+---
