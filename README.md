@@ -53,7 +53,7 @@ data/raw/
 
 Below is a minimal example showing how to run the full pipeline.
 
-```matlab
+
 %% --------------------------------------------------------------
 % 1. Preprocess OLR (remove leap days, extract 1979–2013)
 %% --------------------------------------------------------------
