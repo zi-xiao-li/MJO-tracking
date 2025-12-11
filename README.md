@@ -9,18 +9,17 @@ This repository provides a clean workflow from preprocessing to event detection,
 
 src/
 │
-├── preprocess_olr.m % Preprocess OLR: trim years, remove leap days, save new NetCDF
-├── compute_equatorial_olr.m % Compute ±5° / ±10° equatorial mean OLR
-├── build_mjo_segments.m % Build Hovmöller slices and identify t0 (MJO minima)
-├── track_mjo_all_years.m % Core algorithm: fit propagation lines & compute MJO phase speeds
+├── preprocess_olr.m              # Preprocess OLR: trim years, remove leap days, save new NetCDF
+├── compute_equatorial_olr.m      # Compute ±5° / ±10° equatorial mean OLR
+├── build_mjo_segments.m          # Build Hovmöller slices and identify t0 (MJO minima)
+├── track_mjo_all_years.m         # Core algorithm: fit propagation lines & compute MJO phase speeds
 │
-├── classify_mjo_speed.m % Classify events into slow / fast groups
-├── composite_olr.m % Compute OLR composites (±30 days)
-├── ttest_composite.m % Student-t significance testing for composites
+├── classify_mjo_speed.m          # Classify events into slow / fast groups
+├── composite_olr.m               # Compute OLR composites (±30 days)
+├── ttest_composite.m             # Student-t significance testing for composites
 │
-├── plot_phase_speed_hist.m % Histogram of MJO phase speeds
-└── plot_mjo_hovmoller.m % WK99-style longitude–time composite plotting
-
+├── plot_phase_speed_hist.m       # Histogram of MJO phase speeds
+└── plot_mjo_hovmoller.m          # WK99-style longitude–time composite plotting
 
 ---
 
@@ -39,14 +38,11 @@ The raw dataset should be a daily OLR NetCDF file, typically from NOAA:
 olr(lat, lon, time)
 lat(lat)
 lon(lon)
-time(time) % hours or days since a reference epoch
-
+time(time)      % hours or days since a reference epoch
 
 Place your raw file under:
 
 data/raw/
-
-
 
 ---
 
@@ -54,7 +50,6 @@ data/raw/
 
 Below is a minimal example showing how to run the full pipeline:
 
-```matlab
 %% --------------------------------------------------------------
 % 1. Preprocess OLR (remove leap days, extract 1979–2013)
 %% --------------------------------------------------------------
@@ -106,33 +101,27 @@ window = 30;
 plot_phase_speed_hist(data_all(:,4));      % histogram of speeds
 plot_mjo_hovmoller(FastComp, SlowComp, t_fast, t_slow, lon);
 
-Output
+---
+
+## Output
 
 The pipeline produces:
 
-Estimated MJO propagation speeds (m/s)
-
-Classification of fast vs slow events
-
-Composite OLR fields (all / fast / slow)
-
-Significance masks (t-test)
-
-Figures including:
-
-Phase-speed histogram
-
-WK99-style OLR composites
-
-Hovmöller diagrams
+- Estimated MJO propagation speeds (m/s)  
+- Classification of fast vs slow events  
+- Composite OLR fields (all / fast / slow)  
+- Significance masks (t-test)  
+- Figures including:
+  - Phase-speed histogram  
+  - WK99-style OLR composites  
+  - Hovmöller diagrams  
 
 Figures can be stored under:
 
 figures/
 
-License
+---
+
+## License
 
 MIT License.
-
-
----
