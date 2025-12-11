@@ -53,6 +53,8 @@ data/raw/
 
 Below is a minimal example showing how to run the full pipeline:
 
+```
+
 %% --------------------------------------------------------------
 % 1. Preprocess OLR (remove leap days, extract 1979–2013)
 %% --------------------------------------------------------------
@@ -103,6 +105,8 @@ window = 30;
 %% --------------------------------------------------------------
 plot_phase_speed_hist(data_all(:,4));      % histogram of speeds
 plot_mjo_hovmoller(FastComp, SlowComp, t_fast, t_slow, lon);
+
+```
 
 ---
 
