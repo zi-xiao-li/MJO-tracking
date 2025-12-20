@@ -8,7 +8,6 @@ This repository provides a clean workflow from preprocessing to event detection,
 ## Folder Structure
 
 ```
-
 src/
 │
 ├── preprocess_olr.m              # Preprocess OLR: trim years, remove leap days, save new NetCDF
@@ -22,7 +21,6 @@ src/
 │
 ├── plot_phase_speed_hist.m       # Histogram of MJO phase speeds
 └── plot_mjo_hovmoller.m          # WK99-style longitude–time composite plotting
-
 ```
 ---
 
@@ -38,22 +36,17 @@ src/
 The raw dataset should be a daily OLR NetCDF file, typically from NOAA:
 
 ```
-
 olr(lat, lon, time)
 lat(lat)
 lon(lon)
 time(time)      
-
 ```
 
 Place your raw file under:
 
 ```
-
 data/raw/
-
 ```
-
 ---
 
 ## Typical Workflow
@@ -61,7 +54,6 @@ data/raw/
 Below is a minimal example showing how to run the full pipeline:
 
 ```
-
 % MJO-tracking workflow
 
 % 1. Preprocess OLR (remove leap days, extract 1979–2013)
@@ -89,8 +81,6 @@ data_all = track_mjo_all_years(Seg, 1:0.1:25, 90);
 % 5. Plot
 plot_phase_speed_hist(data_all(:, 4));                 % phase-speed PDF
 plot_mjo_hovmoller(FastComp, SlowComp, t_fast, t_slow, lon);
-
-
 ```
 
 ---
@@ -100,10 +90,10 @@ plot_mjo_hovmoller(FastComp, SlowComp, t_fast, t_slow, lon);
 ### (a) Distribution of MJO Phase Speeds
 
 <p align="center">
-  <img src="figures/mjo_phase_speed_histogram.png" width="600">
+  <img src="figures/mjo_phase_speed_histogram.png" width="500">
 </p>
 
-Histogram of phase speeds for the 79 eastward-propagating MJO events over the Indian Ocean. 
+Fig.1. (a) Histogram of phase speeds for the 79 eastward-propagating MJO events over the Indian Ocean. 
 
 ---
 
@@ -113,7 +103,7 @@ Histogram of phase speeds for the 79 eastward-propagating MJO events over the In
   <img src="figures/mjo_hovmoller_fast_vs_slow.png" width="800">
 </p>
 
-Composite Hovmöller diagrams of OLR anomalies (contours; W m⁻²) averaged over 10°S–10°N for (b) fast and (c) slow MJO events. The contour interval is 5 W m⁻². Shaded regions are statistically significant at a 95% confidence level.
+Fig.1. Composite Hovmöller diagrams of OLR anomalies (contours; W m⁻²) averaged over 10°S–10°N for (b) fast and (c) slow MJO events. The contour interval is 5 W m⁻². Shaded regions are statistically significant at a 95% confidence level.
 
 
 ## Output
@@ -131,9 +121,7 @@ The pipeline produces:
 Figures can be stored under:
 
 ```
-
 figures/
-
 ```
 
 ---
