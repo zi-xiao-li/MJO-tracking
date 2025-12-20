@@ -16,14 +16,7 @@ function [t_fast, t_slow, Xn_fast, Xn_slow, std_fast, std_slow] = ...
 %     Xn_slow    : [nLon x nDay] slow 样本均值
 %     std_fast   : [nLon x nDay] fast 样本标准差
 %     std_slow   : [nLon x nDay] slow 样本标准差
-%
-%   说明：
-%     - 完全对应你原来脚本中：
-%         Xn_fast/slow = mean(...)
-%         std_fast/slow = std(...)
-%         t = Xn ./ (std./sqrt(n))
-%     - 若某个网格点 std = 0，则该点 t 定义为 0（防止除零）。
-%
+
 
 %% Fast 部分
 if isempty(FastEvents) || size(FastEvents,3) == 0
