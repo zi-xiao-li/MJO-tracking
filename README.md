@@ -42,7 +42,7 @@ The raw dataset should be a daily OLR NetCDF file, typically from NOAA:
 olr(lat, lon, time)
 lat(lat)
 lon(lon)
-time(time)      % hours or days since a reference epoch
+time(time)      
 
 ```
 
@@ -95,6 +95,30 @@ plot_mjo_hovmoller(FastComp, SlowComp, t_fast, t_slow, lon);
 
 ---
 
+## Example Results
+
+### (a) Distribution of MJO Phase Speeds
+
+<p align="center">
+  <img src="figures/mjo_phase_speed_histogram.png" width="600">
+</p>
+
+Histogram of estimated MJO phase speeds derived from fitted propagation trajectories.
+Phase speeds are computed based on the optimal linear segment passing through the
+reference longitude (90°E).
+
+---
+
+### (b) Fast vs Slow MJO Composite Hovmöller Diagrams
+
+<p align="center">
+  <img src="figures/mjo_hovmoller_fast_vs_slow.png" width="800">
+</p>
+
+Longitude–time composites of equatorial OLR anomalies for fast and slow MJO events.
+Contours indicate statistically significant differences based on a Student’s *t*-test.
+
+
 ## Output
 
 The pipeline produces:
@@ -104,8 +128,7 @@ The pipeline produces:
 - Composite OLR fields (all / fast / slow)  
 - Significance masks (t-test)  
 - Figures including:
-  - Phase-speed histogram  
-  - WK99-style OLR composites  
+  - Phase-speed histogram   
   - Hovmöller diagrams  
 
 Figures can be stored under:
