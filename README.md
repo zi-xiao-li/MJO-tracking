@@ -79,7 +79,7 @@ data_all = track_mjo_all_years(Seg, 1:0.1:25, 90);
 [t_fast, t_slow] = ttest_composite(FastComp, SlowComp);
 
 % 5. Plot
-plot_phase_speed_hist(data_all(:, 4));                 % phase-speed PDF
+plot_phase_speed_hist(data_all(:, 4));                 
 plot_mjo_hovmoller(FastComp, SlowComp, t_fast, t_slow, lon);
 ```
 
@@ -115,7 +115,7 @@ The pipeline produces:
 
 - Estimated MJO propagation speeds (m/s)  
 - Classification of fast vs slow events  
-- Composite OLR fields (all / fast / slow)  
+- Composite OLR fields (fast / slow)  
 - Significance masks (t-test)  
 - Figures including:
   - Phase-speed histogram   
