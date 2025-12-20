@@ -26,14 +26,13 @@ ax.FontName  = 'Arial';
 % y 轴范围与刻度
 yticks = 0:2:20;
 ax.YTick      = yticks;
-% 原脚本最后一个标签为空字符串
 ax.YTickLabel = [arrayfun(@num2str, yticks(1:end-1), 'UniformOutput', false), {''}];
 ax.YLim       = [0 19];
 
 xlabel('MJO Phase Speed (m/s)', 'FontSize', 16, 'FontName', 'Arial');
 ylabel('Number of Events',      'FontSize', 16, 'FontName', 'Arial');
 
-title('a.', 'FontSize', 16);  % 如果你想添加更长的标题，可自行修改
+title('a.', 'FontSize', 16);  
 
 % colorbar
 c = colorbar;
