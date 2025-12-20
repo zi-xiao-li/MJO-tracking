@@ -103,9 +103,7 @@ plot_mjo_hovmoller(FastComp, SlowComp, t_fast, t_slow, lon);
   <img src="figures/mjo_phase_speed_histogram.png" width="600">
 </p>
 
-Histogram of estimated MJO phase speeds derived from fitted propagation trajectories.
-Phase speeds are computed based on the optimal linear segment passing through the
-reference longitude (90°E).
+Histogram of phase speeds for the 79 eastward-propagating MJO events over the Indian Ocean. 
 
 ---
 
@@ -115,8 +113,7 @@ reference longitude (90°E).
   <img src="figures/mjo_hovmoller_fast_vs_slow.png" width="800">
 </p>
 
-Longitude–time composites of equatorial OLR anomalies for fast and slow MJO events.
-Contours indicate statistically significant differences based on a Student’s *t*-test.
+Composite Hovmöller diagrams of OLR anomalies (contours; W m⁻²) averaged over 10°S–10°N for (b) fast and (c) slow MJO events. The contour interval is 5 W m⁻². Shaded regions are statistically significant at a 95% confidence level.
 
 
 ## Output
