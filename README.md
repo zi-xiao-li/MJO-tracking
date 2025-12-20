@@ -13,7 +13,7 @@ src/
 ├── preprocess_olr.m              # Preprocess OLR: trim years, remove leap days, save new NetCDF
 ├── compute_equatorial_olr.m      # Compute ±5° / ±10° equatorial mean OLR
 ├── build_mjo_segments.m          # Build Hovmöller slices and identify t0 (MJO minima)
-├── track_mjo_all_years.m         # Core algorithm: fit propagation lines & compute MJO phase speeds
+├── track_mjo_all_years.m         # **CORE ALGORITHM**: fit propagation lines & compute MJO phase speeds
 │
 ├── classify_mjo_speed.m          # Classify events into slow / fast groups
 ├── composite_olr.m               # Compute OLR composites (±30 days)
@@ -99,8 +99,12 @@ plot_mjo_hovmoller(FastComp, SlowComp, t_fast, t_slow, lon);
 ### (b) Fast vs Slow MJO Composite Hovmöller Diagrams
 
 <p align="center">
-  <img src="figures/mjo_hovmoller_fast_vs_slow.png" width="1000">
-  <em>Fig.1. Composite Hovmöller diagrams of OLR anomalies (contours; W m⁻²) averaged over 10°S–10°N for (b) fast and (c) slow MJO events. The contour interval is 5 W m⁻². Shaded regions are statistically significant at a 95% confidence level.
+  <img src="figures/mjo_hovmoller_fast_vs_slow.png" width="1000"><br>
+  <em>
+  Fig. 1(b–c). Composite Hovmöller diagrams of OLR anomalies (contours; W m<sup>−2</sup>) averaged over 10°S–10°N
+  for fast and slow MJO events. The contour interval is 5 W m<sup>−2</sup>.
+  Shaded regions are statistically significant at the 95% confidence level.
+  </em>
 </p>
 
 
