@@ -27,10 +27,10 @@ function [data_all, data_fast, data_slow, speed] = classify_mjo_speed( ...
 
 %% 默认参数（如果未提供）
 if nargin < 5 || isempty(speedSlow)
-    speedSlow = 3.3;   % 原脚本默认
+    speedSlow = 3.3; 
 end
 if nargin < 6 || isempty(speedFast)
-    speedFast = 4.5;   % 原脚本默认
+    speedFast = 4.5;  
 end
 if nargin < 7 || isempty(lonMin)
     lonMin = 80;       % StartLon <= 80
