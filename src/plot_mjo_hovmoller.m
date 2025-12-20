@@ -79,7 +79,7 @@ t_save(:,:,2)    = t_slow;
 
 % -------------------- 生成经度标签索引 --------------------
 % 先生成 X_Tick，再映射到 Lon_Label(I6:I7)
-X_Tick = 5:12:81;   % 和你原脚本保持一致
+X_Tick = 5:12:81;  
 X_Tick_Label_Pre = cell(1, I7-I6+1);
 for i = I6:I7
     X_Tick_Label_Pre{i-I6+1} = Lon_Label{i};
