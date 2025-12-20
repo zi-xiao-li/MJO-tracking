@@ -100,7 +100,7 @@ plot_mjo_hovmoller(FastComp, SlowComp, t_fast, t_slow, lon);
 ### (a) Distribution of MJO Phase Speeds
 
 <p align="center">
-  <img src="figures/mjo_phase_speed_histogram.png" width="300">
+  <img src="figures/mjo_phase_speed_histogram.png" width="400">
 </p>
 
 Histogram of estimated MJO phase speeds derived from fitted propagation trajectories.
