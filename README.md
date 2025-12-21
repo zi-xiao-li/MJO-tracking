@@ -1,7 +1,6 @@
 # MJO-tracking
 
-A modular MATLAB toolkit for identifying, tracking, and compositing Madden–Julian Oscillation (MJO) events using daily OLR data.  
-This repository provides a clean workflow from preprocessing to event detection, propagation-speed estimation, and composite analysis.
+A modular MATLAB toolkit for identifying, tracking, and compositing Madden–Julian Oscillation (MJO) events using daily OLR data.  This repository provides a clean workflow from preprocessing to event detection, propagation-speed estimation, and composite analysis.
 
 #### Method adapted from: 
 #### Jian Ling et al., "Global versus Local MJO Forecast Skill of the ECMWF Model during DYNAMO," <i>Monthly Weather Review</i>, 2014.
