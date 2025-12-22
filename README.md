@@ -5,7 +5,6 @@ A modular MATLAB toolkit for identifying, tracking, and compositing Madden–Jul
 #### References: 
 #### Jian Ling et al., "Global versus Local MJO Forecast Skill of the ECMWF Model during DYNAMO," <i>Monthly Weather Review</i>, 2014.
 #### Chen and Wang, "Circulation Factors Determining the Propagation Speed of the Madden–Julian Oscillation," <i>Journal of Climate</i>, 2020.
-#### Roundy, "Analysis of Convectively Coupled Kelvin Waves in the Indian Ocean MJO," <i>Journal of the Atmospheric Sciences</i>, 2008.
 
 ---
 
