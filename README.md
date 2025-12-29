@@ -93,7 +93,7 @@ plot_mjo_hovmoller(FastComp, SlowComp, t_fast, t_slow, lon);
 ### (a) Distribution of MJO Phase Speeds
 
 <p align="center">
-  <img src="figures/mjo_phase_speed_histogram.png" width="500"><br>
+  <img src="figures/mjo_phase_speed_histogram.png" width="400"><br>
   <em>Fig. 1(a). Histogram of phase speeds for the 79 eastward-propagating MJO events over the Indian Ocean.</em>
 </p> 
 
@@ -102,7 +102,7 @@ plot_mjo_hovmoller(FastComp, SlowComp, t_fast, t_slow, lon);
 ### (b) Fast vs Slow MJO Composite Hovmöller Diagrams
 
 <p align="center">
-  <img src="figures/mjo_hovmoller_fast_vs_slow.png" width="1000"><br>
+  <img src="figures/mjo_hovmoller_fast_vs_slow.png" width="800"><br>
   <em>
   Fig. 1(b–c). Composite Hovmöller diagrams of OLR anomalies (contours; W m<sup>−2</sup>) averaged over 10°S–10°N
   for fast and slow MJO events. The contour interval is 5 W m<sup>−2</sup>.
